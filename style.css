@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    overflow-x: hidden
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+#canvas {
+    /* background-color: green; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.box {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.box svg {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.box svg.x {
+    fill: red;
+    transform: scale(1.2);
+}
+
+.colors {
+    position: fixed;
+    left: 32px;
+    top: 50px;
+}
+
+.colors li {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0;
+    border-radius: 50%;
+}
+
+.colors li.black {
+    background-color: black;
+}
+
+.colors li.active {
+    transform: scale(1.2)
+}
+
+.colors li.red {
+    background-color: red;
+}
+
+.colors li.green {
+    background-color: green;
+}
+
+.colors li.blue {
+    background-color: blue;
+}
+.thickness {
+    position: fixed;
+    left: 32px;
+    top: 270px;
+    /* border: 1px solid red; */
+}
+.thickness li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    background-color: gray;
+    /* text-align: center;
+    line-height: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.thickness .text {
+    width: 2em;
+    background-color: #fff;
+}
+.thickness .active {
+    transform: scale(1.2)
+}
